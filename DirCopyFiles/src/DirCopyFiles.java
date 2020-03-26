@@ -16,7 +16,7 @@ public class DirCopyFiles {
 		System.out.println("START");
 
 		Set<File> all = new HashSet<File>();
-		getAllFileAndFolder(new File("c://tmp"), all);
+		getAllFileAndFolder(new File("f://Music"), all);
 
 		for (File file : all) {
 			if (file.exists()) {
@@ -57,7 +57,7 @@ public class DirCopyFiles {
 
 		for (String sourceElement : listSt) {
 			if (sourceElement.contains(".")) {
-				copyFile(c1, "C:\\tmp2\\allFilesInMusic\\" + sourceElement);
+				copyFile(c1, "f:\\allFilesInMusic\\" + sourceElement);
 				return true;
 			}
 		}
